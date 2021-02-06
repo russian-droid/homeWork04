@@ -13,11 +13,10 @@ letters = {
     'Y': 'V', 'Z': 'W',
     ' ':' ', '-':'-',
     } 
-#Enter a number without using digits
+
 userString = input("Enter a sentence that needs to be encrypted with a Caesar cipher:\n")
-userString = userString.upper()
-listLetters=list(userString)
-#get rid of hyphens and split into words
+userString = userString.upper() #transform to all caps
+listLetters=list(userString) #get rid of hyphens and split into words
 print(listLetters) #check on what's going on
 
 listNew=[]
@@ -28,8 +27,7 @@ print(listNew) #check on what's going on
 
 while ("" in listNew): 
     listNew.remove("") #remove empty elements from list
-    
-#print(*listDigits)
+
 print(*listNew,sep='') #print without white spaces
 
 
@@ -65,7 +63,7 @@ letters = {
     ' ':' ',
     '-':'-',
     } 
-#Enter a number without using digits
+
 userString = input("Enter a sentence that needs to be encrypted with a Caesar cipher:\n")
 userString = userString.upper()
 listLetters=list(userString)
